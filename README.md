@@ -48,7 +48,7 @@ I've written some things about this:
 
 ```
 pip install 'travis-cargo<0.2' --user
-export PATH=$HOME/.local/bin:$PATH
+export PATH=`python -m site --user-base`/bin:$PATH
 ```
 
 NB. `travis-cargo` follows semantic versioning rules, so breaking
